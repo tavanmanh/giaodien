@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="title">
+        <img src="img/cho.jpg" alt="">
+        <h1>HỆ THỐNG THÔNG TIN BÁO CÁO SỐ</h1>
+        <div class="title-right">
+            <i class="fa-solid fa-bell" style="color:#b17713;margin-right:20px;font-size: 20px;"></i>
+            <i class="fa-solid fa-circle-user" style="font-size: 20px;margin-top: 2px;margin-right: -5px;color:#424896;z-index: 2"></i>
+            <div class="user">
+                <p style="line-height: 23px;">Tạ Văn Mạnh</p>
+            </div>
+            <i class="fa-solid fa-gear" style="font-size:20px;margin-left: 20px;margin-top: 2px;"></i>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2" style="background:#d68700 ;">
+            <div class="dropdown">
+                <button class="btn status" type="button" data-toggle="dropdown"><p>Tình trạng sử lý báo cáo <i class="fa-solid fa-chevron-down" style="margin-left:40px;line-height: 25px;"></i></p></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#"> <i class="fa-solid fa-fan"></i></i></i>Báo cáo chờ sử lý</a></li>
+                  <li><a href="#"> <i class="fa-solid fa-fan"></i></i></i>Báo cáo đang soạn thảo</a></li>
+                  <li><a href="#"> <i class="fa-solid fa-fan"></i></i></i>Giao báo cáo</a></li>
+                </ul>
+          </div>
+          </div>
+          <div class="col-sm-10" style="padding: 0px;background: #f1f1f0;">
+            <div class="search">
+                <div class="search-left">
+                    <i class="fa fa-bars" style="font-size:20px;margin-left: 20px;margin-top: 3px;margin-right: 20px;"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="margin-right: -30px;color:#42489691;z-index: 2;margin-top:5px;font-size: 20px;"></i>
+                    <div class="input">
+                    <input type="text" placeholder="      Tìm kiếm...">
+                    </div>
+                    <i class="fa-solid fa-filter" style="font-size: 15px;z-index: 2;margin-left: -20px;margin-top: 5px;color:#42489691"></i>
+                </div>
+                <button class="add" id="addMenu"onclick="addMenu()">
+                    <i class="fa-solid fa-square-plus" style="font-size:15px;margin-top: 5px;margin-right: 8px;color: white;"></i>
+                   Tạo báo cáo
+                </button>
+            </div>
+            <div class="baocao">
+              <button type="button">Báo cáo</button>
+              <p>Tìm kiếm</p>
+            </div>
+            <div class="danhmuc">
+              <ul>
+                <li style="width:20%;" ><i class="fa-solid fa-envelope" style="margin-left:30px"></i></li>
+                <li style="width:20%">Tên báo cáo</li>
+                <li style="width:20%">Kỳ báo cáo</li>
+                <li style="width:10%">Người lập</li>
+                <li style="width:10%">Đơn vị báo cáo</li>
+                <li  style="width:10%">Người gửi</li>
+                <li  style="width:10%">Trạng thái</li>
+              </ul>
+            </div>
+            <div class="none">
+              <p>Không có báo cáo cần sử lý</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="above">
+            <p>
+              Tạo báo cáo mới
+            </p>
+        </div>
+        <div class="between">
+          <div class="inside">
+          <div class="between-left">
+            <div class="name">
+              <i class="fa-solid fa-circle-user"></i>
+              <p>Tạ Văn Mạnh</p>
+            </div>
+            <div class="category">
+              <ul>
+                <p style="margin-left:30px ; height:40px;padding-top: 15px;">TẤT CẢ</p>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i>Tất cả</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i>Tất cả</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i>Tất cả</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i>Tất cả</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="beetween-right">
+            <div class="search-menu">
+              <div class="trong">
+                <input type="text" placeholder="  Tìm báo cáo">
+                <button style="background:#5c61fb;width: 50px"><i class="fa fa-search" style="font-size:20px;color:white;"></i></button>
+              </div>
+            </div>
+            <div class="bang" style="overflow:scroll;">
+              <table class="table table-bordered" style="width:100%">
+                <tbody>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.comdddđ</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa-solid fa-star"></i></td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>john@example.com</td>
+                    <td>example.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+        <div class="below" >
+          <button type="button" id="close" onclick="closeMenu()">Đóng!</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/java.js">
+    </script>
+    
+</body>
+</html>

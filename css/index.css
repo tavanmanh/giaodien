@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+.title{
+    background: #FFFF66;
+    height: 50px;
+    padding-left: 0px;
+    display: flex;
+    position: relative;
+}
+.title h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+   line-height: 10px;
+}
+.title img{
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+.title-right{
+    position: absolute;
+    right: 30px;
+    margin-top: 15px;
+    display: flex;
+}
+.status{
+    border: 0px;
+    width: 115%;
+    margin-left: -20px;
+    background: #be2926;
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+.status p{
+    font-size: 17px;
+    display: flex;
+    color: white;
+}
+.dropdown{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.dropdown ul{
+    width: 115%;
+    margin-left: -20px;
+    background: #d68700;
+}
+.dropdown ul li{
+    width: 110%;
+    margin-left: -20px;
+    height: 40px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+.dropdown ul li a{
+    color: white;
+}
+.dropdown ul li i{
+   margin-left: 10px;
+   margin-right: 20px;
+}
+.user{
+    height: 23px;
+    width: 200px;
+    background: white;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    z-index: 1;
+}
+.search{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background: #f7f7f7;
+    position: relative;
+}
+.search-left{
+    height: 30px;
+    display: flex;
+    margin-top: 15px;
+}
+.input{
+    margin-left: 10px;
+    z-index: 1;
+}
+.input input{
+    width: 300px;
+    border: none;
+}
+.add{
+    margin-top: 10px;
+    position: absolute;
+    right: 30px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    border: none;
+    background: #ef9318;
+    border-radius: 5px 5px 5px 5px;
+}
+.main{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    width: 90%;
+    height: 510px;
+    background: #fcfeff;
+    top: -80px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+}
+.above{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #f2edef;
+    border-radius: 10px 10px 0px 0px;
+}
+.between{
+    height: 420px;
+}
+.above p{
+    margin-left: 30px;
+}
+.between-left{
+    width: 20%;
+    background: #ceceeb;
+}
+.beetween-right{
+    width: 80%;
+}
+.between-left i{
+    font-size: 20px;
+    margin-top: 9px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.inside{
+    display:flex;
+    width: 98%;
+    margin: auto;
+    margin-top: 5px;
+}
+.name{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #f2edef;
+    display: flex;
+    line-height: 40px;
+    background: #5e80e4;
+    color: white;
+    font-weight: bold;
+}
+.name p{
+    font-size: 15px;
+}
+.category ul li{
+    height:35px;
+    list-style: none;
+    border: 1px solid #f2edef;
+    line-height: 35px;
+}
+.category ul li a{
+    margin-left: 5px;
+    font-family: "Times New Roman", Times, serif;
+}
+.category ul li i{
+    font-size: 15px;
+}
+.search-menu{
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background:#9baee6;
+}
+.trong{
+    line-height: 37px;
+    width: 240px;
+    position: absolute;
+    height: 30px;
+    right: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+.trong button,input{
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.bang{
+    width: 98%;
+    background: white;
+    margin-top: 100px;
+    height: 380px;
+    margin: auto;
+    border-radius: 0px 0px 5px 5px;
+    background: #ffffff;
+}
+.below{
+    height: 45px;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+}
+.bang tr{
+    height: 10px;
+}
+.below button{
+    right: 50px;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    background: #f7f7f7;
+    border: 1px solid #f2edef;
+    border-radius: 5px 5px 5px 5px;
+
+}
+.bang tr td{
+    height:40px;
+}
+.baocao{
+    height: 40px;
+    display: flex;
+    background:#8080807d;
+    border: 1px solid #f2edef;
+}
+.baocao button{
+    margin-top: 5px;
+    height: 35px;
+    width: 80px;
+    border: 1px solid #f2edef27;
+}
+.baocao p{
+    line-height: 40px;
+    margin-left: 20px;
+}
+.danhmuc{
+    height: 35px;
+    border: 1px solid #3333332e;
+    width: 100%;
+}
+.danhmuc ul{
+    display: flex;
+}
+.danhmuc ul li{
+    list-style: none;
+    line-height: 35px;
+}
+.none{
+    height: 35px;
+    border: 1px solid #3333332e;
+    width: 100%;
+    line-height: 35px;
+}
+.none p{
+    margin-left: 20px;
+}
